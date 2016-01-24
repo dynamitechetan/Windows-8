@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(LoginActivity.this, "FUCK YOU",
+                Toast.makeText(LoginActivity.this, "Logged In",
                         Toast.LENGTH_LONG).show();
                 Intent startActivity = new Intent(LoginActivity.this, MetroMain.class);
                 startActivity(startActivity);
