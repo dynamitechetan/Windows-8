@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#001940"
+    tools:context="dynamitechetan.windows8.MetroMain"
+>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/horizontalScrollView"
+        android:fadeScrollbars="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+
+            <include layout="@layout/blue_tile"
+                android:layout_width="205dp"
+                android:layout_height="240dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/msg"
+                android:id="@+id/pink"
+                />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/desktop"
+                    android:id="@+id/test1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/msg"
+                android:id="@+id/msg"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/test1"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/calc"
+                android:layout_below="@id/test1"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mail"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/mail"
+                android:layout_toRightOf="@id/calc"
+                android:layout_below="@+id/msg"
+                />
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/drive"-->
+                <!--android:src="@drawable/non"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_toRightOf="@+id/mail"-->
+                <!--/>-->
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>
