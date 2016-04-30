@@ -12,8 +12,9 @@ import android.widget.TextView;
 import java.text.DateFormat;
 import java.util.Date;
 
-public class DesktopActivity extends AppCompatActivity {
+import dynamitechetan.windows8.Apps.InternetExplorer;
 
+public class DesktopActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,17 @@ public class DesktopActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startActivity = new Intent(DesktopActivity.this, MetroMain.class);
+                startActivity(startActivity);
+
+            }
+        });
+        ImageView internetexplorer;
+
+        internetexplorer = (ImageView)findViewById(R.id.internetondesktop);
+        internetexplorer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startActivity = new Intent(DesktopActivity.this, InternetExplorer.class);
                 startActivity(startActivity);
 
             }

@@ -16,21 +16,32 @@
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/exploroerico"
+        android:src="@drawable/internet"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
         android:layout_alignTop="@+id/taskbar"
         android:layout_marginTop="2dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/imageView2" />
+        android:id="@+id/internetondesktop" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/exploroerico"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="35dp"
+        android:id="@+id/explorer"
+        android:layout_alignTop="@+id/taskbar"
+        android:layout_marginTop="2dp"
+        android:layout_alignLeft="@+id/internetondesktop"
+        />
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:src="@drawable/start"
         android:id="@+id/start"
         android:layout_marginLeft="4dp"
-        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignTop="@+id/internetondesktop"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
