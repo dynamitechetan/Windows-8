@@ -39,7 +39,7 @@
                 android:layout_marginRight="200dp"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@+id/msg"
-                android:id="@+id/pink"
+                android:id="@+id/paint"
                 />
 
             <ImageView

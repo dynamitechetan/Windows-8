@@ -8,7 +8,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
+
+import dynamitechetan.windows8.PaintAppv2.Paint_Activity_main;
 
 public class MetroMain extends AppCompatActivity {
 
@@ -19,14 +20,7 @@ public class MetroMain extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         FullScreencall();
         setContentView(R.layout.activity_metro_main);
-        final RelativeLayout pinkone = (RelativeLayout) findViewById(R.id.pink);
-        pinkone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Toast.makeText(MetroMain.this,"something",Toast.LENGTH_SHORT).show();
-            }
-        });
 
 
         ImageView desktop = (ImageView) findViewById(R.id.test1);
@@ -34,6 +28,15 @@ public class MetroMain extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startActivity = new Intent(MetroMain.this, DesktopActivity.class);
+                startActivity(startActivity);
+            }
+        });
+        RelativeLayout paint = (RelativeLayout) findViewById(R.id.paint);
+        paint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent startActivity = new Intent(MetroMain.this, Paint_Activity_main.class);
                 startActivity(startActivity);
             }
         });
