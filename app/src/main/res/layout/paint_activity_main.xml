@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/menuLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#4B8A08"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/penButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pen" />
+
+        <Button
+            android:id="@+id/highlighterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="highlighter" />
+
+        <Button
+            android:id="@+id/paintButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="paint" />
+
+        <Button
+            android:id="@+id/erasorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="erasor" />
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:layout_weight="8"
+        tools:context=".MainActivity">
+
+        <!--  <Button
+             android:id="@+id/pen"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:text="pen" />
+         <Button
+             android:layout_toRightOf="@+id/pen"
+             android:id="@+id/paint"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:text="paint" /> -->
+
+    </RelativeLayout>
+</LinearLayout>

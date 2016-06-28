@@ -1,83 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/edit_acc_det"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_acc_det"
 
-        android:padding="12dp"
-        android:focusable="true"
+        android:layout_weight="1"
         android:clickable="true"
-        android:layout_weight="1">
-        <ImageView android:id="@+id/dpimage"
-            android:src="@drawable/wall"
+        android:focusable="true"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/dpimage"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
             android:scaleType="centerCrop"
-            android:layout_alignParentLeft="true" />
+            android:src="@drawable/wall" />
 
-        <TextView android:id="@+id/tvFullName"
+        <TextView
+            android:id="@+id/tvFullName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:text="Alia Bhatt"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:fadingEdge="horizontal"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/dpimage"
             android:layout_toRightOf="@+id/dpimage"
-            android:layout_toEndOf="@+id/dpimage" />
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="Alia Bhatt"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
-        <ImageView android:id="@+id/trlogo"
+        <ImageView
+            android:id="@+id/trlogo"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/wall"
             android:layout_alignTop="@+id/tvTrestorName"
-            android:layout_toRightOf="@id/dpimage"
             android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@id/dpimage"
+            android:layout_toRightOf="@id/dpimage"
             android:background="?android:attr/selectableItemBackground"
-            android:layout_toEndOf="@id/dpimage" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/wall" />
 
 
         <TextView
             android:id="@+id/tvTrestorName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="12 Hours ago"
-            android:textColor="#a3a3a3"
-            android:textSize="16sp"
-            android:maxLines="2"
+            android:layout_alignBottom="@id/dpimage"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/trlogo"
-            android:layout_alignBottom="@id/dpimage"
-            android:layout_centerHorizontal="true" />
+            android:maxLines="2"
+            android:text="12 Hours ago"
+            android:textColor="#a3a3a3"
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="tr 120.01"
-            android:textSize="16sp"
             android:id="@+id/valintrests"
-            android:padding="2dp"
-            android:layout_alignBottom="@+id/tvFullName"
-            android:layout_alignParentEnd="true" />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Rs 15.99"
-            android:textSize="16sp"
+            android:layout_alignBottom="@+id/tvFullName"
+            android:layout_alignParentEnd="true"
             android:padding="2dp"
+            android:text="tr 120.01"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="16sp" />
+
+        <TextView
             android:id="@+id/valincurr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_below="@+id/valintrests"
-            android:layout_alignParentEnd="true" />
+            android:padding="2dp"
+            android:text="Rs 15.99"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="16sp" />
 
 
     </RelativeLayout>

@@ -5,137 +5,152 @@
     android:layout_height="match_parent"
 
     tools:context="dynamitechetan.windows8.Apps.InternetExplorer">
-<RelativeLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
-    <ImageView
 
-        android:layout_width="fill_parent"
-        android:scaleType="fitXY"
-        android:layout_height="30dp"
-        android:src="@drawable/br_head"
-        android:id="@+id/head_ie" />
-
-    <TextView
-        android:layout_width="400dp"
-        android:layout_height="16dp"
-        android:id="@+id/editText"
-        android:layout_marginTop="7dp"
-        android:layout_marginStart="50dp"
-        android:background="@drawable/ed_bg"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="13dp"
-        android:layout_height="13dp"
-        android:id="@+id/arrow"
-        android:src="@drawable/arrow"
-        android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/editText" />
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
-
-        android:src="@drawable/back"
-        android:id="@+id/back"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-
-        android:src="@drawable/front"
-        android:layout_marginStart="20dp"
-        android:id="@+id/front"
-        android:layout_alignTop="@+id/editText"
-        android:layout_alignParentStart="true" />
-
-</RelativeLayout>
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/head_ie"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/br_head" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/cross" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="400dp"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/ed_bg" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/front"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignTop="@+id/editText"
+            android:layout_marginStart="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/front" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="30dp">
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/internet"
 
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true">
+        <WebView
+            android:id="@+id/internet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
-    </WebView>
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+        </WebView>
     </RelativeLayout>
+
     <ImageView
+        android:id="@+id/taskbar"
         android:layout_width="fill_parent"
-        android:scaleType="centerCrop"
         android:layout_height="wrap_content"
-        android:src="@drawable/t2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/taskbar" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/t2" />
+
     <ImageView
+        android:id="@+id/internetexplorer"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/internet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/taskbar"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
-        android:layout_alignTop="@+id/taskbar"
         android:layout_marginTop="2dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/internetexplorer" />
+        android:src="@drawable/internet" />
+
     <ImageView
+        android:id="@+id/explorer"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/exploroerico"
+        android:layout_alignLeft="@+id/internetexplorer"
+        android:layout_alignTop="@+id/taskbar"
         android:layout_marginLeft="30dp"
         android:layout_marginStart="35dp"
-        android:id="@+id/explorer"
-        android:layout_alignTop="@+id/taskbar"
         android:layout_marginTop="2dp"
-    android:layout_alignLeft="@+id/internetexplorer"
-  />
+        android:src="@drawable/exploroerico" />
+
     <ImageView
+        android:id="@+id/start"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/start"
-        android:id="@+id/start"
-        android:layout_marginLeft="4dp"
-        android:layout_alignTop="@+id/internetexplorer"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/internetexplorer"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/start" />
 
     <TextClock
+        android:id="@+id/textClock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textClock"
-        android:textColor="#fff"
-        android:textSize="10sp"
-android:layout_marginTop="8dp"
-        android:layout_alignTop="@+id/taskbar"
         android:layout_alignStart="@+id/date"
-        android:layout_marginStart="3dp" />
+        android:layout_alignTop="@+id/taskbar"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#fff"
+        android:textSize="10sp" />
 
     <TextView
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
         android:text="New Text"
-        android:id="@+id/date"
+
         android:textColor="#fff"
         android:textSize="10sp"
-        android:visibility="invisible"
-
-        android:layout_marginEnd="9dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:visibility="invisible" />
 
 
 </RelativeLayout>

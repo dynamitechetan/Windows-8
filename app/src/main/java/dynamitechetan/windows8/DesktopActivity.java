@@ -15,6 +15,8 @@ import java.util.Date;
 import dynamitechetan.windows8.Apps.InternetExplorer;
 
 public class DesktopActivity extends AppCompatActivity {
+    private ImageView internetexplorer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +32,13 @@ public class DesktopActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startActivity = new Intent(DesktopActivity.this, MetroMain.class);
+                finish();
                 startActivity(startActivity);
 
             }
         });
-        ImageView internetexplorer;
 
-        internetexplorer = (ImageView)findViewById(R.id.internetondesktop);
+        internetexplorer = (ImageView) findViewById(R.id.internetondesktop);
         internetexplorer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,19 +48,17 @@ public class DesktopActivity extends AppCompatActivity {
             }
         });
 
-
-
-
         TextView tv = (TextView) findViewById(R.id.date);
         String ct = DateFormat.getDateInstance().format(new Date());
         tv.setText(ct);
 
     }
+
     public void FullScreencall() {
-        if(Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19) { // lower api
+        if (Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19) { // lower api
             View v = this.getWindow().getDecorView();
             v.setSystemUiVisibility(View.GONE);
-        } else if(Build.VERSION.SDK_INT >= 19) {
+        } else if (Build.VERSION.SDK_INT >= 19) {
             //for new api versions.
             View decorView = getWindow().getDecorView();
             int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;

@@ -1,80 +1,83 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wall"
     tools:context="dynamitechetan.windows8.DesktopActivity">
 
     <ImageView
+        android:id="@+id/taskbar"
         android:layout_width="fill_parent"
-        android:scaleType="centerCrop"
         android:layout_height="wrap_content"
-        android:src="@drawable/t2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/taskbar" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/t2" />
+
     <ImageView
+        android:id="@+id/internetondesktop"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/internet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/taskbar"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
-        android:layout_alignTop="@+id/taskbar"
         android:layout_marginTop="2dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/internetondesktop" />
+        android:src="@drawable/internet" />
+
     <ImageView
+        android:id="@+id/explorer"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/exploroerico"
+        android:layout_alignLeft="@+id/internetondesktop"
+        android:layout_alignTop="@+id/taskbar"
         android:layout_marginLeft="30dp"
         android:layout_marginStart="35dp"
-        android:id="@+id/explorer"
-        android:layout_alignTop="@+id/taskbar"
         android:layout_marginTop="2dp"
-        android:layout_alignLeft="@+id/internetondesktop"
-        />
+        android:src="@drawable/exploroerico" />
+
     <ImageView
+        android:id="@+id/start"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/start"
-        android:id="@+id/start"
-        android:layout_marginLeft="4dp"
-        android:layout_alignTop="@+id/internetondesktop"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/internetondesktop"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/start" />
 
     <TextClock
+        android:id="@+id/textClock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textClock"
-        android:textColor="#fff"
-        android:textSize="10sp"
-
-        android:layout_alignTop="@+id/taskbar"
         android:layout_alignStart="@+id/date"
-        android:layout_marginStart="3dp" />
+        android:layout_alignTop="@+id/taskbar"
+
+        android:layout_marginStart="3dp"
+        android:textColor="#fff"
+        android:textSize="10sp" />
 
     <TextView
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/date"
-        android:textColor="#fff"
-        android:textSize="10sp"
-
-        android:layout_marginEnd="9dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
+
+        android:text="New Text"
+        android:textColor="#fff"
+        android:textSize="10sp" />
 
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="2dp"
-        android:src="@drawable/mycomp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/start" />
+        android:layout_alignStart="@+id/start"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/mycomp" />
 
 </RelativeLayout>

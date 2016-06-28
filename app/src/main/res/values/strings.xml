@@ -6,4 +6,8 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_metro_main">MetroMain</string>
     <string name="title_activity_desktop">DesktopActivity</string>
+
+    <string name="title_activity_applauncher">applauncher</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
