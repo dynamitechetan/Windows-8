@@ -2,10 +2,10 @@
 App to Simulate Windows 8.1(PC) in Android. (alomst non-functional now)
 
 # How to Start
-1.Download or Clone the project in the android studio
-2. After the gradle build is complete rub the project
-3. Its should run without erros
-4. Report issues on Github
+1.Download or Clone the project in the android studio<br>
+2. After the gradle build is complete run the project<br>
+3. Its should run without errors<br>
+
 
 #Working Things
 1. Metro UI
